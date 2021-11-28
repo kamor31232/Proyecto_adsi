@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregables</title>
+</head>
+
+<body>
+    <h1>Entregables</h1>
+    <a href="index.html">Inicio</a>
+    <hr>
+    <h3>Primer Trimestre</h3>
+    <ul>
+        <li><a class="link" onclick="click1(1)">Presentacion
+                Proyecto</a></li>
+        <li><a class="link" onclick="click1(2)">Documento Proyecto</a></li>
+        <li><a class="link" onclick="click1(3)">Cronograma de actividades</a></li>
+        <li><a class="link" onclick="click1(4)">Inventario</a></li>
+        <li><a class="link" onclick="click1(5)">Recolección</a></li>
+        <li><a class="link" onclick="click1(6)">Diagrama de prosesos</a></li>
+        <li><a class="link" onclick="click1(7)">Especificaciones de requisitos</a></li>
+    </ul>
+    <iframe id="click1Id" style="display: none" src="" frameborder="0"></iframe>
+</body>
+<script>
+    function click1(e) {
+        const el = document.getElementById('click1Id')
+        el.style = 'display: block'
+        if (e === 1) {
+            el.src = './App/app_documentacion/1er_trimestre/1_proyecto/1_1_1_presentacion_proyecto (2).pdf'
+        } else if (e === 2) {
+            el.src = './App/app_documentacion/1er_trimestre/1_proyecto/1_1_2_formulacion_proyecto.pdf'
+        } else if (e === 3) {
+            el.src = './App/app_documentacion/1er_trimestre/2_actividades/1_2_1_cronograma_actividades_v1.pdf'
+        } else if (e === 4) {
+            el.src = './App/app_documentacion/1er_trimestre/2_actividades/1_2_2_inventario_v1.pdf'
+        } else if (e === 5) {
+            el.src = './App/app_documentacion/1er_trimestre/3_recoleccion/1_3_1_recoleccion_informacion (1).pdf'
+        } else if (e === 6) {
+            el.src = './App/app_documentacion/1er_trimestre/4_diagrama de prosesos/1_4_1_diagrama_procesos (1).pdf'
+        } else if (e === 7) {
+            el.src = './App/app_documentacion/1er_trimestre/5_especificacion de requisitos/1_5_1_especificacion_de_requisitos.pdf'
+        }
+
+
+    }
+</script>
+<style>
+    iframe {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .link {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .link:hover {
+        cursor: pointer;
+    }
+</style>
+
+</html>
