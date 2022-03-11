@@ -1,0 +1,21 @@
+body{
+  background-color: rgb(236, 216, 195);
+}
+.img {
+  height: 250px;
+  margin-top: 120px;
+  margin-left: 150px;
+}
+.tabla2{
+  margin-top: 100px;
+}
+p{
+  margin-left: 150px ;
+}
+.boton1{
+  margin-left: 200px;
+}
+.boton2{
+  margin-left: 700px;
+}
+

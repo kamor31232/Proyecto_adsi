@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            background-position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            position: absolute;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            margin: 15px;
+            margin-left: 100px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px;
+
+        }
+
+        label {
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .genero {
+            display: flex;
+        }
+
+        input {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+
+        input:focus-visible {
+            outline: #ddd;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        select {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+
+        button {
+            background: #117a8b;
+            color: white;
+            height: 38px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border-color: #117a8b;
+            border-style: none;
+        }
+
+        .title {
+            position: absolute;
+            right: 10%;
+            width: 25%;
+        }
+
+        .subtitle {
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            background-color: rgb(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="card-body">
+            <a href="login.html">Regresar al inicio</a>
+            <h2>Registro</h2>
+            <label>Ingresa tu nombre y apellidos</label>
+            <input type="text"> <br>
+            <label>Ingresa tu número de documento</label>
+            <input type="number" </body>
+            <label> Cargue foto</label>
+            <input type="file">
+            <label> Ingresa tu número de telefono</label>
+            <input type="number">
+            <label>Ingresa tu correo electrónico</label>
+            <input type="email ">
+
+            <label>Elige tu genero</label>
+            <div class="genero">
+                Masculino
+                <input type="radio" name="sexo">
+                Femenino
+                <input type="radio" name="sexo">
+            </div>
+            <label>Selecciona tu ciudad</label>
+            <select name="" id="">
+                <option value="Bogota">Bogota</option>
+                <option value="Medellin">Medellín</option>
+                <option value="Cali">Cali</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Barranquilla">Barranquilla</option>
+
+            </select>
+            <button>Ingresar</button>
+
+        </div>
+    </div>
+    <div class="title">
+        <h1 class="subtitle">Bienvenido a tu examen de Ciencias Naturales</h1>
+
+    </div>
+
+</html>
